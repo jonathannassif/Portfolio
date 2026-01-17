@@ -1,3 +1,4 @@
+// Hero.jsx
 import React from 'react';
 
 function Hero() {
@@ -8,11 +9,16 @@ function Hero() {
 
     return (
         <div className="hero" id="hero">
-            <h1>Hi, I'm Jonathan</h1>
-            <p>Frontend Developer | React Enthusiast</p>
-            <button className="cta-button" onClick={scrollToContact}>
-                Let's Work Together
-            </button>
+            <div className="hero-content">
+                <h1>
+                    Hi, I'm <span className="name-highlight">Jonathan Joseph</span>
+                </h1>
+                <p className="hero-subtitle">Full-Stack Developer</p>
+                <p className="hero-tagline">Turning Ideas Into Digital Reality</p>
+                <button className="cta-button" onClick={scrollToContact}>
+                    Let's Work Together
+                </button>
+            </div>
         </div>
     );
 }
