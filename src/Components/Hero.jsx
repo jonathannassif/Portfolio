@@ -1,4 +1,3 @@
-// Hero.jsx
 import React from 'react';
 
 function Hero() {
@@ -10,14 +9,21 @@ function Hero() {
     return (
         <div className="hero" id="hero">
             <div className="hero-content">
+                <p className="hero-label">Web Developer & Designer</p>
                 <h1>
-                    Hi, I'm <span className="name-highlight">Jonathan Joseph</span>
+                    I Build Landing Pages That Turn Your <span className="name-highlight">Followers</span> Into <span className="name-highlight">Paying Clients</span>
                 </h1>
-                <p className="hero-subtitle">Full-Stack Developer</p>
-                <p className="hero-tagline">Turning Ideas Into Digital Reality</p>
-                <button className="cta-button" onClick={scrollToContact}>
-                    Let's Work Together
-                </button>
+                <p className="hero-tagline">
+                    Custom websites designed to convert. No templates. No fluff. Just results.
+                </p>
+                <div className="hero-buttons">
+                    <button className="cta-button primary" onClick={scrollToContact}>
+                        Book a Free Call
+                    </button>
+                    <button className="cta-button secondary" onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}>
+                        See My Work
+                    </button>
+                </div>
             </div>
         </div>
     );

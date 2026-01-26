@@ -1,4 +1,3 @@
-// Projects.jsx
 import React from 'react';
 import aristo from '../assets/images/Aristo.png'
 import moodify from '../assets/images/Moodify.png'
@@ -8,24 +7,33 @@ function Projects() {
     const projects = [
         { 
           id: 1, 
-          title: 'Aristo Education', 
-          description: 'Led frontend development for an educational platform serving 1000+ students. Focused on accessibility, performance, and intuitive UX design.', 
+          title: 'Aristo Education Platform', 
+          client: 'Educational Institution',
+          challenge: 'Needed a professional online presence to attract students and showcase programs.',
+          solution: 'Built a modern, accessible platform with clear CTAs and course information.',
+          result: '1000+ students engaged, improved enrollment inquiries',
           link: "https://aristoeducation.net/",
           image: aristo,
           tech: ['HTML', 'CSS', 'JavaScript']
         },
         { 
           id: 2,
-          title: 'Moodify', 
-          description: 'Built a mood-tracking web app to help users monitor emotional wellness. Features data visualization, local storage, and responsive design.', 
+          title: 'Moodify - Wellness Tracker', 
+          client: 'Personal Project / Showcase',
+          challenge: 'Users needed an intuitive way to track mental wellness daily.',
+          solution: 'Created an interactive mood-tracking app with data visualization and streak tracking.',
+          result: 'Clean UX, responsive design, local data management',
           link: "https://jonathannassif.github.io/Moodify/",
           image: moodify,
           tech: ['HTML', 'CSS', 'JavaScript']
         },
         { 
           id: 3,
-          title: 'Know Thyself', 
-          description: 'Developed an interactive self-assessment tool for personal growth. Implements dynamic logic, clean UI, and seamless user flow.',
+          title: 'Know Thyself - Self-Assessment Tool', 
+          client: 'Personal Development Niche',
+          challenge: 'Needed an engaging platform for personal growth assessment.',
+          solution: 'Developed interactive assessment with dynamic logic and personalized results.',
+          result: 'Seamless user flow, minimalist design, high engagement',
           link: "https://jonathannassif.github.io/know-thyself/",
           image: knowThyself,
           tech: ['HTML', 'CSS', 'JavaScript']
@@ -35,9 +43,9 @@ function Projects() {
     return (
         <div className="projects" id='projects'>
             <div className="projects-header" data-aos="fade-up">
-                <h2>My Projects</h2>
+                <h2>Client Work</h2>
                 <p className="projects-subtitle">
-                    Real projects. Real impact. Real code.
+                    Real projects. Real results. Real impact.
                 </p>
             </div>
             <div className="projects-grid">
@@ -62,8 +70,21 @@ function Projects() {
                             </div>
                         </div>
                         <div className="project-content">
+                            <div className="project-client">{project.client}</div>
                             <h3>{project.title}</h3>
-                            <p>{project.description}</p>
+                            
+                            <div className="project-case-study">
+                                <div className="case-item">
+                                    <strong>Challenge:</strong> {project.challenge}
+                                </div>
+                                <div className="case-item">
+                                    <strong>Solution:</strong> {project.solution}
+                                </div>
+                                <div className="case-item result">
+                                    <strong>Result:</strong> {project.result}
+                                </div>
+                            </div>
+
                             <div className="project-tech">
                                 {project.tech.map((tech, i) => (
                                     <span key={i} className="tech-tag">{tech}</span>
@@ -72,6 +93,17 @@ function Projects() {
                         </div>
                     </div>
                 ))}
+            </div>
+
+            {/* CTA after projects */}
+            <div className="projects-cta" data-aos="fade-up">
+                <h3>Ready to get results like these?</h3>
+                <button 
+                    className="cta-button primary"
+                    onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+                >
+                    Let's Talk About Your Project
+                </button>
             </div>
         </div>
     );

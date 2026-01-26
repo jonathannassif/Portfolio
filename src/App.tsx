@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import './index.css';
 
 import Hero from './Components/Hero'
+import Results from './Components/Results'
 import About from './Components/About'
 import Skills from './Components/Skills'
 import Projects from './Components/Projects'
@@ -24,6 +25,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
+      <Results />
       <About />
       <Skills />
       <Projects />
