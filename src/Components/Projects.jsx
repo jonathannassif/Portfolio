@@ -2,43 +2,55 @@ import React from 'react';
 import aristo from '../assets/images/Aristo.png'
 import moodify from '../assets/images/Moodify.png'
 import knowThyself from '../assets/images/Know-Thyself.png'
+import manish from '../assets/images/Manisshh.png'
 
 function Projects() {
-    const projects = [
-        { 
-          id: 1, 
-          title: 'Aristo Education Platform', 
-          client: 'Educational Institution',
-          challenge: 'Needed a professional online presence to attract students and showcase programs.',
-          solution: 'Built a modern, accessible platform with clear CTAs and course information.',
-          result: '1000+ students engaged, improved enrollment inquiries',
-          link: "https://aristoeducation.net/",
-          image: aristo,
-          tech: ['HTML', 'CSS', 'JavaScript']
-        },
-        { 
-          id: 2,
-          title: 'Moodify - Wellness Tracker', 
-          client: 'Personal Project / Showcase',
-          challenge: 'Users needed an intuitive way to track mental wellness daily.',
-          solution: 'Created an interactive mood-tracking app with data visualization and streak tracking.',
-          result: 'Clean UX, responsive design, local data management',
-          link: "https://jonathannassif.github.io/Moodify/",
-          image: moodify,
-          tech: ['HTML', 'CSS', 'JavaScript']
-        },
-        { 
-          id: 3,
-          title: 'Know Thyself - Self-Assessment Tool', 
-          client: 'Personal Development Niche',
-          challenge: 'Needed an engaging platform for personal growth assessment.',
-          solution: 'Developed interactive assessment with dynamic logic and personalized results.',
-          result: 'Seamless user flow, minimalist design, high engagement',
-          link: "https://jonathannassif.github.io/know-thyself/",
-          image: knowThyself,
-          tech: ['HTML', 'CSS', 'JavaScript']
-        }
-    ];
+   const projects = [
+    { 
+      id: 1, 
+      title: 'Aristo Education Platform', 
+      client: 'Educational Institution',
+      challenge: 'Needed a professional online presence to attract students and showcase programs.',
+      solution: 'Built a modern, accessible platform with clear CTAs and course information.',
+      result: '1000+ students engaged, improved enrollment inquiries',
+      link: "https://aristoeducation.net/",
+      image: aristo,
+      tech: ['HTML', 'CSS', 'JavaScript']
+    },
+    { 
+      id: 2,
+      title: 'Growth Landing Page', 
+      client: 'Creator Economy / Marketing',
+      challenge: 'Creators needed a high-converting landing page to turn followers into clients.',
+      solution: 'Designed a modern landing page with bold visuals, 3D elements, and clear CTAs.',
+      result: 'Premium design, smooth animations, mobile-responsive',
+      link: "https://growth-landing-page-lime.vercel.app/",
+      image: manish,
+      tech: ['React', 'CSS3', 'React Icons']
+    },
+    { 
+      id: 3,
+      title: 'Moodify - Wellness Tracker', 
+      client: 'Personal Project / Showcase',
+      challenge: 'Users needed an intuitive way to track mental wellness daily.',
+      solution: 'Created an interactive mood-tracking app with data visualization and streak tracking.',
+      result: 'Clean UX, responsive design, local data management',
+      link: "https://jonathannassif.github.io/Moodify/",
+      image: moodify,
+      tech: ['HTML', 'CSS', 'JavaScript']
+    },
+    { 
+      id: 4,
+      title: 'Know Thyself - Self-Assessment Tool', 
+      client: 'Personal Development Niche',
+      challenge: 'Needed an engaging platform for personal growth assessment.',
+      solution: 'Developed interactive assessment with dynamic logic and personalized results.',
+      result: 'Seamless user flow, minimalist design, high engagement',
+      link: "https://jonathannassif.github.io/know-thyself/",
+      image: knowThyself,
+      tech: ['HTML', 'CSS', 'JavaScript']
+    }
+];
 
     return (
         <div className="projects" id='projects'>
