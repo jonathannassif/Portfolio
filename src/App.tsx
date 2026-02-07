@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './index.css';
+import { Analytics } from "@vercel/analytics/next"
+
 
 import Hero from './Components/Hero'
 import Results from './Components/Results'
@@ -30,6 +32,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+      <Analytics />
     </div>
   );
 }

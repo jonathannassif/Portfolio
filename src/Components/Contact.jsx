@@ -1,9 +1,7 @@
 import React from 'react';
+import { track } from '@vercel/analytics';
 
 function Contact() {
-    // Replace with YOUR Calendly link
-    const calendlyLink = "https://calendly.com/jonathannassif/30min";
-
     return (
         <div className="contact" id='contact' data-aos="fade-up">
             <div className="contact-content">
@@ -16,7 +14,8 @@ function Contact() {
                 {/* Primary CTA - Calendly */}
                 <div className="contact-primary">
                     <a 
-                        href="https://calendly.com/jonas2000288/10min" 
+                        href="https://calendly.com/jonas2000288/10min?source=results" 
+                        onClick={() => track('calendly_click', { portfolio: 'results' })}
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="calendly-button"
@@ -33,15 +32,31 @@ function Contact() {
 
                 {/* Secondary Contact Options */}
                 <div className="contact-links">
-                    <a href="mailto:jonas2000288@gmail.com" className="contact-link">
+                    <a 
+                        href="mailto:jonas2000288@gmail.com"  
+                        onClick={() => track('email_click', { portfolio: 'results' })}
+                        className="contact-link"
+                    >
                         <span className="link-icon">✉</span>
                         Email
                     </a>
-                    <a href="https://x.com/jonathannassiff" target="_blank" rel="noopener noreferrer" className="contact-link">
+                    <a 
+                        href="https://x.com/jonathannassiff"  
+                        onClick={() => track('social_click', { platform: 'twitter', portfolio: 'results' })}
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="contact-link"
+                    >
                         <span className="link-icon">𝕏</span>
                         X (Twitter)
                     </a>
-                    <a href="https://www.linkedin.com/in/jonathan-nassif/" target="_blank" rel="noopener noreferrer" className="contact-link">
+                    <a 
+                        href="https://www.linkedin.com/in/jonathan-nassif/" 
+                        onClick={() => track('social_click', { platform: 'linkedin', portfolio: 'results' })}
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="contact-link"
+                    >
                         <span className="link-icon">💼</span>
                         LinkedIn
                     </a>
