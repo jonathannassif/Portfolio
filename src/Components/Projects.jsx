@@ -35,7 +35,7 @@ function Projects() {
       challenge: 'Users needed an intuitive way to track mental wellness daily.',
       solution: 'Created an interactive mood-tracking app with data visualization and streak tracking.',
       result: 'Clean UX, responsive design, local data management',
-      link: "https://jonathannassif.github.io/Moodify/",
+      link: "https://moodify-react.vercel.app/",
       image: moodify,
       tech: ['HTML', 'CSS', 'JavaScript']
     },
@@ -46,7 +46,7 @@ function Projects() {
       challenge: 'Needed an engaging platform for personal growth assessment.',
       solution: 'Developed interactive assessment with dynamic logic and personalized results.',
       result: 'Seamless user flow, minimalist design, high engagement',
-      link: "https://jonathannassif.github.io/know-thyself/",
+      link: "https://know-thyself-react.vercel.app/",
       image: knowThyself,
       tech: ['HTML', 'CSS', 'JavaScript']
     }
